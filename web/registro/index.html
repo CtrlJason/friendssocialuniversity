@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social univericty Friends</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="../styles/buttoms.css">
+</head>
+<body>
+    <h2>Formulario de registro</h2><!--titulo provicional-->
+    <Section class="formulario_section-main">
+        <!--se solicita ingresar los datos personales al usuario-->
+        <h3>ingrese sus datos</h3>
+
+        <input class="cuadro_nombre_datos" type="text" name="nombres" id="nombres" placeholder="Ingrese sus nombres">
+
+        <input class="cuadro_nombre_datos" type="text" name="apellidos" id="apellidos" placeholder="Ingrese sus apellidos">
+        <label for="">
+            <h5>seleccione su genero</h5>
+        </label>
+        <div class="genero">
+            <ul>
+                <h6>hombre</h6>
+                <h6>mujer</h6>
+                <h6>otros</h6>
+            </ul>
+        </div>
+
+        <label for="">
+            <h5>crea un apodo</h5>
+        </label>
+        <input class="cuadro" type="nickname" name="nickname" id="nickname"
+        placeholder="Cree un apodo">
+
+        <input class="cuadro" type="email" name="correo" id="correo" placeholder="Ingrese su correo">
+
+        <input class="cuadro" type="number" name="id_carnet" id="id_carnet" placeholder="Ingrese el ID de su carnet">
+
+        <h5>ingrese la fecha de su naciomiento</h5>
+        <input class="cuadro" type="date" name="edad" id="edad" placeholder="Ingrese su fecha de nacimiento">      
+
+        <input class="cuadro" type="password" name="password" id="password" 
+        placeholder="Cree su contraseña">
+
+        <input class="cuadro" type="password" name="password" id="password" placeholder="Confirme su contraseña">
+
+        <input class="bttn" type="submit" value="Enviar formulario">
+
+        <!--por si tiene la cuenta ya creada se le enviara a la pagina de inicio de sesion-->
+        <a class="volver_inicio" href="../inicio_sesion/index.html">¿Ya tienes una cuenta?</a>
+        
+    </Section>
+</body>
+</html>
