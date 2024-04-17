@@ -12,28 +12,30 @@
         <!--ingresar a la cuenta-->
         <div class="section-login_main">
             <div class="content_section-main">
-                <h2>Inicia sesión</h2>    
-                <!-------- Escribir correo ----------->
-                <label for="correo">
-                    <h4>Correo</h4>
-                </label>
-                <input class="cuadro-datos_section-main" type="email" name="correo" id="correo" placeholder="Ingrese el correo">
-                <!-------- Escribir contraseña ----------->
-                <label for="password">
-                    <h4>Contraseña</h4>
-                </label>
-                <input class="cuadro-datos_section-main" type="password" name="password" id="password" placeholder="ingrese su contraseña">
-                <!-------- Recordar contraseña ----------->
-                <div class="record_section_main">
-                    <input type="checkbox" id="recordarme">
-                    <label for="recordarme">
-                    <p>Mantener la sesion iniciada</p>
+                <h2>Inicia sesión</h2>
+                <form action="">    
+                    <!-------- Escribir correo ----------->
+                    <label for="correo">
+                        <h4>Correo</h4>
                     </label>
-                </div>
-                <!-------- Boton ----------->
-                <input class="bttn" type="submit" value="Ingresar">
-                <!-------- No tienes cuenta ----------->
-                <a class="link_section-main" href="../registro/index.html">¿No tienes una cuenta aun?</a>
+                    <input class="cuadro-datos_section-main" type="email" name="correo" id="correo" placeholder="Ingrese el correo" maxlength="50" required>
+                    <!-------- Escribir contraseña ----------->
+                    <label for="password">
+                        <h4>Contraseña</h4>
+                    </label>
+                    <input class="cuadro-datos_section-main" type="password" name="password" id="password" placeholder="ingrese su contraseña" maxlength="20" required>
+                    <!-------- Recordar contraseña ----------->
+                    <div class="record_section_main">
+                        <input type="checkbox" id="recordarme">
+                        <label for="recordarme">
+                        <p>Mantener la sesion iniciada</p>
+                        </label>
+                    </div>
+                    <!-------- Boton ----------->
+                    <input class="bttn" type="submit" value="Ingresar">
+                    <!-------- No tienes cuenta ----------->
+                    <a class="link_section-main" href="../registro/index.html">¿No tienes una cuenta aun?</a>
+                </form>
             </div>
         </div>
     </section>
