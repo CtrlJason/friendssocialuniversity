@@ -30,6 +30,7 @@
     text-align: center;
     box-sizing: border-box;
     margin: auto;
+    margin-bottom: 10px;
     width: 350px;
     padding: 10px;
     background-color: #ffffff;
@@ -48,8 +49,8 @@
 
 /* imagenes de los usuarios */
 
-.img_sugerencias_section-main{
-}
+/* .img_sugerencias_section-main{
+} */
 
 .imagen-usuario_section-main{
     width: 250px;
