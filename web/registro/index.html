@@ -4,52 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Social univericty Friends</title>
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="../styles/loggin_register.css">
     <link rel="stylesheet" href="../styles/buttoms.css">
 </head>
 <body>
-    <h2>Formulario de registro</h2><!--titulo provicional-->
-    <Section class="formulario_section-main">
-        <!--se solicita ingresar los datos personales al usuario-->
-        <h3>ingrese sus datos</h3>
+    <Section>
+        <div class="section-registro_main">
+            <div class="content_section-main">
+                <h2>Formulario de registro</h2><!--titulo provicional-->
+            <!--se solicita ingresar los datos personales al usuario-->
+            <!-------- Datos Basicos ----------->
+            <label for="nombres"><h4>Ingrese sus datos</h4></label>
 
-        <input class="cuadro_nombre_datos" type="text" name="nombres" id="nombres" placeholder="Ingrese sus nombres">
+            <!-------- Nombre y Apellido ----------->
+            <input class="cuadro-datos_section-main" type="text" name="nombres" id="nombres" placeholder="nombres">
+            <input class="cuadro-datos_section-main" type="text" name="apellidos" id="apellidos" placeholder="apellidos">
+            <!-------- Seleccionar Genero ----------->
+            <label for="genero"><h4>Seleccione su genero</h4></label><!--No es necesario ponerle label a los titulos-->
+            <select class="seleccion_section-main" name="genero" id="genero">
+                <option value="mujer">mujer</option>
+                <option value="hombre">hombre</option>
+                <option value="no_binario">no binario</option>
+            </select>
+            <!-------- Nombre de Usuario ----------->
+            <label for="nickname"><h4>Nombre de usuario</h4></label>
+            <input class="cuadro-datos_section-main" type="nickname" name="nickname" id="nickname"
+            placeholder="Yair 17">
 
-        <input class="cuadro_nombre_datos" type="text" name="apellidos" id="apellidos" placeholder="Ingrese sus apellidos">
-        <label for="">
-            <h5>seleccione su genero</h5>
-        </label>
-        <div class="genero">
-            <ul>
-                <h6>hombre</h6>
-                <h6>mujer</h6>
-                <h6>otros</h6>
-            </ul>
+            <!-------- Correo Electronico ----------->
+            <label for="correo"><h4>Correo electronico</h4></label>
+            <input class="cuadro-datos_section-main" type="email" name="correo" id="correo" placeholder="juanito@gmail.com">
+            <input class="cuadro-datos_section-main" type="email" name="correo" placeholder="Confirme su correo">
+
+            <!-------- Carnet ----------->
+            <label for="id_carnet"><h4>Carnet de identificacion</h4></label>
+            <input class="cuadro-datos_section-main" type="number" name="id_carnet" id="id_carnet" placeholder="Ingrese el ID de su carnet">
+
+            <!-------- Fecha de Nacimiento ----------->
+            <label for="edad"><h4>Fecha de naciomiento</h4></label>
+            <input class="cuadro-datos_section-main" type="date" name="edad" id="edad">      
+
+            <!-------- Contraseña ----------->
+            <label for="password"><h4>Contraseña</h4></label>
+            <input class="cuadro-datos_section-main" type="password" name="password" id="password" 
+            placeholder="Cree su contraseña">
+            <input class="cuadro-datos_section-main" type="password" name="password" id="password" placeholder="Confirme su contraseña">
+
+            <!-------- Botón ----------->
+            <input class="bttn" type="submit" value="Enviar formulario">
+
+            <!-------- Regreso a inicio ----------->
+            <!--por si tiene la cuenta ya creada se le enviara a la pagina de inicio de sesion-->
+            <a class="link_section-main" href="../inicio_sesion/index.html">¿Ya tienes una cuenta?</a> <!--Cambio de classe ala misma del css para login y registro-->
+            </div>
         </div>
-
-        <label for="">
-            <h5>crea un apodo</h5>
-        </label>
-        <input class="cuadro" type="nickname" name="nickname" id="nickname"
-        placeholder="Cree un apodo">
-
-        <input class="cuadro" type="email" name="correo" id="correo" placeholder="Ingrese su correo">
-
-        <input class="cuadro" type="number" name="id_carnet" id="id_carnet" placeholder="Ingrese el ID de su carnet">
-
-        <h5>ingrese la fecha de su naciomiento</h5>
-        <input class="cuadro" type="date" name="edad" id="edad" placeholder="Ingrese su fecha de nacimiento">      
-
-        <input class="cuadro" type="password" name="password" id="password" 
-        placeholder="Cree su contraseña">
-
-        <input class="cuadro" type="password" name="password" id="password" placeholder="Confirme su contraseña">
-
-        <input class="bttn" type="submit" value="Enviar formulario">
-
-        <!--por si tiene la cuenta ya creada se le enviara a la pagina de inicio de sesion-->
-        <a class="volver_inicio" href="../inicio_sesion/index.html">¿Ya tienes una cuenta?</a>
-        
     </Section>
+
+    <footer>
+
+    </footer>
 </body>
 </html>
