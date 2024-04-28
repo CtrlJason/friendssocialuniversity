@@ -1,0 +1,17 @@
+.section_main{
+    padding: 20px 0;
+    background-color: #94D2BD;
+}
+
+.content_main{
+    margin: 25px;
+
+    border-color: black;
+}
+
+.content_main img{
+    border: 4px solid;
+    border-radius: 50px;
+    border-color: black;
+    width: 250px;
+}

@@ -1,0 +1,116 @@
+*{
+    margin: 0;/*para tener*/
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #94D2BD;
+    background-image: url('https://i.pinimg.com/736x/d4/64/8f/d4648fd4f392749a05ae8a84650194c0.jpg');
+}
+
+/* Caja contenido login */
+.section-login_main{
+    width: 500px;/*ancho*/
+    margin: auto;/*pone margen automatica izquierda y derecha de formas iguales los lados*/
+    margin-top: 2%;/*para que se separe de arriba*/
+    margin-bottom: 2%;
+    border-radius: 5px;
+}
+
+/* Caja contenido registro */
+.section-registro_main{
+    width: 500px;/*ancho*/
+    margin: auto;/*pone margen automatica izquierda y derecha de formas iguales los lados*/
+    margin-top: 2%;/*para que se separe de arriba*/
+    margin-bottom: 2%;
+    border-radius: 5px;
+}
+
+/* Titulos */
+.section-login_main h2, .section-registro_main h2{
+    font-size: 50px;/*para darle el tamano al texto*/
+    margin-bottom: 20px;
+    text-align: center;/*para centrar unicamente texto*/
+    display: block;
+    color: white;
+    margin-bottom: 50px;
+}
+
+/* Subtitulos */
+.section-login_main h4, .section-registro_main h4{
+    font-size: 20px;
+    color: #ffffff;
+    text-align: left;
+    margin-left: 25px ;
+}
+
+/* Caja contenido global */
+.content_section-main{
+    padding: 40px 0; /*el pading sirve para rellenar*/
+    width: 600px;/*ancho*/
+    background-color: #005F73;
+    border-radius: 20px;
+    text-align: center;
+}
+.cuadro-datos_section-main{
+    display: block;/*lo creamos como bloque*/
+    font-size: 14px;
+    font-weight: 600;
+    color: #0A9396;
+
+    border-radius: 5px;
+
+    width: 90%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    padding-left: 10px;
+}
+
+.seleccion_section-main{
+    border: 20px;
+    border-color: #005F73;
+    border-radius: 6px;
+
+    width: 40%;
+
+    background-color: #ffffff;
+
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+
+    color: #0A9396;
+    padding: 2px;
+
+    margin-right: 52%;
+    margin-bottom: 20px;
+}
+
+.seleccion_section-main:hover{
+    width: 40%;
+    border-radius: 6px;
+    background-color: #E9D8A6;
+
+    color: #005F73;
+    text-align: center;
+    padding: 2px;
+}
+
+.bttn{
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.record_section_main{
+    display: flex;
+    gap: 10px;
+    margin-left: 25px;
+    color: white;
+}
+.link_section-main{
+    text-decoration: none;
+    color: #ffffff;
+}
