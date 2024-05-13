@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social univericty Friends</title>
+    <link rel="stylesheet" href="../styles/loggin_register.css">
+    <link rel="stylesheet" href="../styles/buttoms.css">
+</head>
+<body>
+    <Section>
+        <div class="section-registro_main">
+            <div class="content_section-main">
+                <h2>Formulario de registro</h2><!--titulo provicional-->
+            <form action="../php/registro.php" method="POST">
+                <!--se solicita ingresar los datos personales al usuario-->
+                <!-------- Datos Basicos ----------->
+                <label for="nombres"><h4>Ingrese sus datos</h4></label>
+
+                <!-------- Nombre y Apellido ----------->
+                <input class="cuadro-datos_section-main" type="text" name="nombres" id="nombres" placeholder="nombres" maxlength="30" required>
+                <input class="cuadro-datos_section-main" type="text" name="apellidos" id="apellidos" placeholder="apellidos" maxlength="30" required>
+                <!-------- Seleccionar Genero ----------->
+                <label for="genero"><h4>Seleccione su genero</h4></label><!--No es necesario ponerle label a los titulos-->
+                <select class="seleccion_section-main" name="genero" id="genero" required>
+                    <option value="none">Seleccionar</option>
+                    <option value="mujer">Mujer</option>
+                    <option value="hombre">Hombre</option>
+                    <option value="no_binario">No binario</option>
+                </select>
+                <!-------- Nombre de Usuario ----------->
+                <label for="nickname"><h4>Nombre de usuario</h4></label>
+                <input class="cuadro-datos_section-main" type="nickname" name="nickname" id="nickname" placeholder="Yair 17" minlength="4" maxlength="25" required>
+
+                <!-------- Correo Electronico ----------->
+                <label for="correo"><h4>Correo electronico</h4></label>
+                <input class="cuadro-datos_section-main" type="email" name="correo" id="correo" placeholder="juanito@gmail.com" maxlength="50" required>
+                <input class="cuadro-datos_section-main" type="email" name="correo" placeholder="Confirme su correo" maxlength="50" required>
+
+                <!-------- Carnet ----------->
+                <label for="id_carnet"><h4>Carnet de identificacion</h4></label>
+                <input class="cuadro-datos_section-main" type="number" name="id_carnet" id="id_carnet" placeholder="Ingrese el ID de su carnet" minlength="9" maxlength="9" required>
+
+                <!-------- Fecha de Nacimiento ----------->
+                <label for="edad"><h4>Fecha de nacimiento</h4></label>
+                <input class="cuadro-datos_section-main" type="date" name="edad" id="edad" required>      
+
+                <!-------- Contraseña ----------->
+                <label for="password"><h4>Contraseña</h4></label>
+                <input class="cuadro-datos_section-main" type="password" name="password" id="password" placeholder="Cree su contraseña" minlength="8" maxlength="20" required>
+                <input class="cuadro-datos_section-main" type="password" name="password" id="password" placeholder="Confirme su contraseña" minlength="8" maxlength="20" required>
+
+                <!-------- Botón ----------->
+                <input class="bttn" name="submit" type="submit" value="Enviar" required>
+
+                <!-------- Regreso a inicio ----------->
+                <!--por si tiene la cuenta ya creada se le enviara a la pagina de inicio de sesion-->
+                <a class="link_section-main" href="./index.html">¿Ya tienes una cuenta?</a> <!--Cambio de classe ala misma del css para login y registro-->
+            </form>
+            </div>
+        </div>
+    </Section>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
