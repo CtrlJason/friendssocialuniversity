@@ -11,27 +11,27 @@
 .ul_main-navbar{
     list-style: none;
     display: flex; /*Flex hace que todos los elementos dentro del contenedor se coloquen uno al lado del otro*/
-    justify-content: right; /*justify-content posiciona todos los elementos dentro del padre*/
+    justify-content: center; /*justify-content posiciona todos los elementos dentro del padre*/
     align-items: center;
-    gap: 20px;
-    
+    gap: 35px;
 }
+
 
 .link_main-navbar{
     color: #001219;
     padding: 5px;
     text-decoration: none;
     font-size: 20px;
+
+    transition: color 150ms ease-out;
+    transition: background-color 150ms ease-out;
+    border-radius: 10px;
 }
 
 .link_main-navbar:hover{
     color: #fff;
     background-color: #005F73;
     padding: 5px;
-
-    transition: color 150ms ease-in;
-    transition: background-color 150ms ease-in;
-    border-radius: 10px;
 }
 
 .link_main-navbar_user{
@@ -39,6 +39,5 @@
 }
 
 .ubi_main-navbar{
-    margin-left: 500px;
-    margin-right: 60px;
+
 }

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../styles/navbar.css">
     <link rel="stylesheet" href="../styles/buttoms.css">
     <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="../styles/chat.css">
+    <link rel="stylesheet" href="./styles/chat.css">
 
 </head>
 <body>
@@ -17,34 +17,56 @@
                     <ul class="ul_main-navbar">
                         <li><a class="link_main-navbar" href="./index.html">Inicio</a></li>
                         <li><a class="link_main-navbar" href="#">Amigos</a></li>
-                        <div class="ubi_main-navbar">
-                            <li><a class="link_main-navbar" id="open_chat">Chat</a></li>
-                            <div class="box_mnsj" id="modal_container">
-                                <div class="modal">
-                                    <p class="chat" >Chats</p>
-                                    <p class="Mensajes"> Mensajes </p>
-                                    <div class="personas persona1"> chat1 </div>
-                                    <div class="persona2 personas">  chat2 </div>
-                                    <div class="persona3 personas">  chat3 </div>
-                                    <div class="persona4 personas">  chat4 </div>
-                                    <div class="persona5 personas">  chat5 </div>
-                                    <div class="cuadro_de_mensajes">
-                                    <div class="chat_persona"> 
-                                        <input class="txt_mensaje" type="text" placeholder="Envia un mensaje :D">
-                                    </div>
-                                    </div>
-                                    <li class="cerrar" id="close_chat">X</li>
-                                    <p class="fondo_mnsj"></p>
-                                </div>
-                            </div>
-                            <script src="../scripts/mensaje.js"></script>
-                        </div>
-                        </div>
+                        <li><a class="link_main-navbar" id="open_chat" href="#">Chat</a></li>
                         <!-- user -->
-                        <li><a class="link_main-navbar_user" href="../usuario/index.html"><img src="../resources/img/icons/user.svg" alt="icono de usuario"></a></li>
-                        
-                    </ul>
+                        <li><a class="link_main-navbar_user" href="../usuario/index.html"><img src="../resources/img/icons/user.svg" alt="icono de usuario"></a></li> 
+                        <!-- Chat desplegable -->
+                        <div class="contenedor_chat" id="modal_container">
+                            <div class="modal">
+                                <li class="cerrar" id="close_chat"><a href="#"><img src="../resources/img/icons/boton_x.svg" alt=""></a></li>
+                                <p class="titulo_chat">Amigos Activos</p>
+                                <div class="boton_imagen_usuario--nav">
+                                    <a href="#">
+                                    <img src="../resources/img/icons/user.svg" alt="">
+                                    </a>
+                                    <a href="#"><p>Nombre del estudiante</p></a>
+                                </div>
+                                <div class="boton_imagen_usuario--nav">
+                                    <a href="#">
+                                    <img src="../resources/img/icons/user.svg" alt="">
+                                    </a>
+                                    <a href="#"><p>Nombre del estudiante</p></a>
+                                </div>
+                                <div class="boton_imagen_usuario--nav">
+                                    <a href="#">
+                                    <img src="../resources/img/icons/user.svg" alt="">
+                                    </a>
+                                    <a href="#"><p>Nombre del estudiante</p></a>
+                                </div>
+                                <div class="boton_imagen_usuario--nav">
+                                    <a href="#">
+                                    <img src="../resources/img/icons/user.svg" alt="">
+                                    </a>
+                                    <a href="#"><p>Nombre del estudiante</p></a>
+                                </div>
+                                <div class="boton_imagen_usuario--nav">
+                                    <a href="#">
+                                    <img src="../resources/img/icons/user.svg" alt="">
+                                    </a>
+                                    <a href="#"><p>Nombre del estudiante</p></a>
+                                </div>
+                                <div class="caja_mensaje--recibir ">
+
+                                </div>
+                                <div> 
+                                    <input class="caja__mensaje--enviar" type="text" placeholder="Envia un mensaje :D">
+                                </div>
+                                </div>
+                                <p class="fondo_mnsj"></p>
+                            </div>
+                        <script src="../scripts/mensaje.js"></script>
                 </div>
+                    </ul>
             </nav>
     </header>
     <main>

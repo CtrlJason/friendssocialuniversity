@@ -1,0 +1,124 @@
+*{
+    text-decoration: none;
+}
+
+/* ---Contenedor del chat desplegable--- */
+.contenedor_chat{
+    display: flex;
+    background: #0000.3;
+    align-items: center;
+    position: fixed;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0;
+}
+
+/* --Caja del chat desplegado-- */
+
+.modal{ /* Estilos del contenedor */
+    margin-top: 5%;
+    margin: auto;
+    border-radius: 8px;
+    background:rgb(255, 255, 255);
+    width: 1000px;
+    height: 600px;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    box-shadow: 0 0 10px;
+}
+
+/* --Titulo del char de amigos-- */
+
+.titulo_chat { /* Estilos del titulo del chatt */
+    text-align: center;
+    background: #005F73;
+    border: 5px solid #0008 ;
+    border-width: 2px;
+    border-radius: 10px;
+    width: 30%;
+    box-sizing: border-box;
+    margin: 10px 0 0 5px;
+    padding: 12px;
+    color: aliceblue;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0 0 0 3%;
+}
+
+/* --Boton para cerrar el chat-- */
+/* ----------------------------------------------- */
+.cerrar{ /*Estilos del boton*/
+    color: #001219;
+    padding: 3px;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 1%;
+    margin-left: 96%;
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+    transition: color 150ms ease-out;
+    transition: background-color 150ms ease-out;
+}
+.cerrar:hover{ /* Transicion del boton para cerrar el chat */
+    color: #fff;
+    background-color: #005F73;
+    padding: 3px;
+}
+/* ----------------------------------------------- */
+
+/* --Usuarios con nombre e imagen-- */
+/* ----------------------------------------------- */
+.boton_imagen_usuario--nav{ /*Contenedor de los usuarios*/
+    display: flex;
+    margin: 3% 0 0 6%;
+}
+.boton_imagen_usuario--nav img{ /*Tamaño de el icono de imagen*/
+    width: 60px;
+}
+.boton_imagen_usuario--nav p{ /*Estilos del nombre*/
+    color: #005F73;
+    margin-top: 35px;
+    margin-left: 5px;
+}
+/* ----------------------------------------------- */
+
+/* --Area del chat principal-- */
+/* ----------------------------------------------- */
+.caja_mensaje--recibir { /* Estilos del area principal del chat */
+    border: 2px solid black;
+    height: 465px;
+    width: 600px;
+    margin-top: -520px;
+    margin-left: 36%;
+    border-radius: 2px;
+    border-bottom: transparent;
+}
+
+/* --Area de la zona de escritura dentro del chat principal-- */
+
+.caja__mensaje--enviar { /* Estilos del area de char de escritura*/
+    border-radius: 2px;
+    border: 2px solid #005F73;
+    min-height: 50px;
+    max-height: 70px;
+    margin-left: 36%;
+    width: 588px;
+    margin-top: -2px;
+    border-top: transparent;
+    padding-left: 10px;
+}
+/* ----------------------------------------------- */
+
+/* --Escribir su funciona :) "Jason"-- */
+
+.show {
+    pointer-events: auto;
+    opacity: 1;
+}
