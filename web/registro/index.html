@@ -12,7 +12,7 @@
         <div class="section-registro_main">
             <div class="content_section-main">
                 <h2>Formulario de registro</h2><!--titulo provicional-->
-            <form action="">
+            <form action="../php/registro.php" method="POST">
                 <!--se solicita ingresar los datos personales al usuario-->
                 <!-------- Datos Basicos ----------->
                 <label for="nombres"><h4>Ingrese sus datos</h4></label>
@@ -51,7 +51,7 @@
                 <input class="cuadro-datos_section-main" type="password" name="password" id="password" placeholder="Confirme su contraseña" minlength="8" maxlength="20" required>
 
                 <!-------- Botón ----------->
-                <input class="bttn" type="submit" value="Enviar formulario" required>
+                <input class="bttn" name="submit" type="submit" value="Enviar" required>
 
                 <!-------- Regreso a inicio ----------->
                 <!--por si tiene la cuenta ya creada se le enviara a la pagina de inicio de sesion-->
