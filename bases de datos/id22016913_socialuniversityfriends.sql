@@ -106,13 +106,12 @@ CREATE TABLE `usuario` (
 -- Estructura de tabla para la tabla `notificaciones`
 --
  
-create table 'notificaciones'(
-  'idnotificacion' int (11) PRIMARY KEY,
-  'idusuario' int(25), 
-  'tipodenotificacion' varchar (50),
-  FOREIGN KEY  ('idusuario') REFERENCES 'usuario'('id')
-)
-
+CREATE TABLE `notificaciones` (
+  `idnotificacion` int(11) PRIMARY KEY,
+  `idusuario` int(25),
+  `tipodenotificacion` varchar(50),
+  FOREIGN KEY (`idusuario`) REFERENCES `usuario` (`id`)
+);
 --
 -- Índices para tablas volcadas
 --
