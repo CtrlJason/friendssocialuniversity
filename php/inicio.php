@@ -1,7 +1,7 @@
 <?php
 $database = "u294723362_university";
 $local= "localhost";
-$contra = "Tumama3!";
+$contra = "Tumama753!";
 $usuario = "u294723362_admin";
 
 $conexion = mysqli_connect($local, $usuario, $contra, $database);
