@@ -100,6 +100,19 @@ CREATE TABLE `usuario` (
   `idcarrerausuario` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `notificaciones`
+--
+ 
+create table 'notificaciones'(
+  'idnotificacion' int (11) PRIMARY KEY,
+  'idusuario' int(25), 
+  'tipodenotificacion' varchar (50),
+  FOREIGN KEY  ('idusuario') REFERENCES 'usuario'('id')
+)
+
 --
 -- Índices para tablas volcadas
 --
@@ -203,7 +216,6 @@ ALTER TABLE `registro`
 
 --
 -- Filtros para la tabla `usuario`
---
 ALTER TABLE `usuario`
   ADD CONSTRAINT `usuario_ibfk_1` FOREIGN KEY (`idestudiante`) REFERENCES `registro` (`codigoestudiante`),
   ADD CONSTRAINT `usuario_ibfk_2` FOREIGN KEY (`idgustos`) REFERENCES `gustos` (`idgustos`),
