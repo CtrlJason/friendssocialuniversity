@@ -71,14 +71,14 @@ CREATE TABLE gustos (
 --
 CREATE TABLE usuario (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    idestudiante INT,
+    codigoestudiante INT,
     idgustos INT,
-    idgenerousuario INT,
-    idcarrerausuario INT,
-    FOREIGN KEY (idestudiante) REFERENCES registro(codigoestudiante),
+    idgenero INT,
+    idcarrera INT,
+    FOREIGN KEY (codigoestudiante) REFERENCES registro(codigoestudiante),
     FOREIGN KEY (idgustos) REFERENCES gustos(idgustos),
-    FOREIGN KEY (idgenerousuario) REFERENCES genero(idgenero),
-    FOREIGN KEY (idcarrerausuario) REFERENCES carrera(idcarrera)
+    FOREIGN KEY (idgenero) REFERENCES genero(idgenero),
+    FOREIGN KEY (idcarrera) REFERENCES carrera(idcarrera)
 );
 
 --
@@ -86,12 +86,18 @@ CREATE TABLE usuario (
 --
 CREATE TABLE chat (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    enviado INT,
-    recibido INT,
-    mensaje TEXT,
-    FOREIGN KEY (enviado) REFERENCES registro(codigoestudiante),
-    FOREIGN KEY (recibido) REFERENCES registro(codigoestudiante)
+    id_chatunico int (25),
+    de INT(25),
+    para  INT(25),
+    mensaje varchar(100),
+    fecha datetime,
+    leido varchar(25)
 );
+CREATE TABLE chat_individual (
+id_chatunico int (25) auto_increment PRIMARY KEY,
+de int(25),
+para int (25)
+)
 --
 -- Estructura de tabla para la tabla `notificaciones`
 --
