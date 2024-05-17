@@ -1,16 +1,6 @@
--- phpMyAdmin SQL Dump
--- version 5.2.1
--- https://www.phpmyadmin.net/
---
--- Servidor: localhost:3306
--- Tiempo de generación: 13-05-2024 a las 01:45:38
--- Versión del servidor: 10.5.20-MariaDB
--- Versión de PHP: 7.3.33
-
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
-
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -66,6 +56,7 @@ CREATE TABLE gustos (
     idgustos INT AUTO_INCREMENT PRIMARY KEY,
     gustos VARCHAR(100)
 );
+
 --
 -- Estructura de tabla para la tabla `usuario`
 --
@@ -86,28 +77,32 @@ CREATE TABLE usuario (
 --
 CREATE TABLE chat (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    id_chatunico int (25),
-    de INT(25),
-    para  INT(25),
-    mensaje varchar(100),
-    fecha datetime,
-    leido varchar(25)
+    id_chatunico INT,
+    de INT,
+    para INT,
+    mensaje VARCHAR(100),
+    fecha DATETIME,
+    leido BOOLEAN
 );
+
 CREATE TABLE chat_individual (
-id_chatunico int (25) auto_increment PRIMARY KEY,
-de int(25),
-para int (25)
-)
+    id_chatunico INT AUTO_INCREMENT PRIMARY KEY,
+    de INT,
+    para INT
+);
+
 --
 -- Estructura de tabla para la tabla `notificaciones`
 --
 
 CREATE TABLE notificaciones (
-  idnotificacion int(11) PRIMARY KEY,
-  idusuario int(25),
-  tipodenotificacion varchar(50),
-  FOREIGN KEY (idusuario) REFERENCES usuario (id)
-); 
+    idnotificacion INT AUTO_INCREMENT PRIMARY KEY,
+    id INT,
+    tipodenotificacion VARCHAR(50),
+    FOREIGN KEY (id) REFERENCES usuario(id)
+);
+
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
